@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina personal</title>
+    <style>
+        .container {
+
+        font-family: Calibri, sans-serif;
+        font-size: 16px;
+        color: blue;
+        background-color: #fff;
+    }
+        h1 {
+
+        color:Black;
+        font-family: Arial, sans-serif;
+        text-align: center;
+    }   
+        </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Pagina personal</h1>
+            <p>Name: Ignacio</p>
+            <p>Major: Industrial Engineer</p>
+            <p>Year of University Enrollment: 2019</p>
+            <p>Link to your Github: https://github.com/IAQuinteros/IAQuinteros.github.io</p>
+            <p>Personal Summary: My name is Ignacio, I am 24 years old, I live and was born in Santiago, Chile</p>
+        <table>
+            <tr>
+                <th>SKILL</th>
+                <th>LEVELL</tr>
+            </tr>
+            <tr>
+                <th>Python</th>
+                <th>Advance</tr>
+            </tr>
+            <tr>
+                <th>Java</th>
+                <th>basic</tr>
+            </tr>
+            <tr>
+                <th>HTML</th>
+                <th>basic</tr>
+            </tr>
+            <tr>
+                <th>git</th>
+                <th>basic</tr>
+            </tr>
+            <tr>
+                <th>Excel</th>
+                <th>Advance</tr>
+            </tr>
+            <tr>
+                <th>SQL</th>
+                <th>basic</tr>
+            </tr>
+            <tr>
+                <th>Ruby</th>
+                <th>basic</tr>
+            </tr>
+            <tr>
+                <th>English</th>
+                <th>basic</tr>
+            </tr>
+            <tr>
+                <th>Spanish</th>
+                <th>Expert</tr>
+            </tr>
+        </table>
+        <button onclick=changeText()> Boton </button>
+        <input type:"text" id="newInput">
+        <div id="changedText">
+            Text to change
+        </div>
+    </div>  
+    <script>
+        function changeText() {
+            var inputValue = document.getElementById("newInput").value;
+            document.getElementById("changedText").innerText = inputValue;
+        }
+    </script>
+</body>
+</html>
